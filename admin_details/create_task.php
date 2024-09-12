@@ -47,7 +47,7 @@
                     <level>End Date:<level>
                     <input type="date" class="form-control" name="end_date">
                    </div>
-                   <input type="submit" class="btn-btn-warning" name="create_task" value="Create">
+                   <input  type="submit" class="btn btn-primary"name="create_task" value="Create"style="margin-top: 5px;>
             </form>
 
         </div>

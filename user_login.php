@@ -37,10 +37,12 @@
     <title>UserLogin</title>
      <!-- jQuery CDN -->
      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="styles.css">
    
 </head>
 <body>
+  <img src="https://i.ibb.co.com/7yd8Z0C/pngtree-blue-abstract-background-business-image-564246.jpg">
+
    <div class="form">
    <form action="" method="POST">
         <h1>User Login</h1>
@@ -61,7 +63,7 @@
         <p>Dont have an account? <a href="user_register.php">Register</a></p>
         </div>
       
-        <div>
+        <div class="go_home">
         <a href="index.php">Go Home</a>
         </div>
       

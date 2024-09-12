@@ -9,7 +9,7 @@ include('../includes/connection_db.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manage Task</title>
    
-    <link rel="stylesheet" href="../css/user_admin_dashboard.css">
+    <link rel="stylesheet" href="/admin_user.css">
 
 </head>
 <body>
@@ -37,7 +37,8 @@ include('../includes/connection_db.php');
             <td><?php echo $row['start_date']; ?></td>
             <td><?php echo $row['end_date']; ?></td>
             <td><?php echo $row['status']; ?></td>
-            <td><a href="edit_task.php? id=<?php echo $row['tid']; ?>">Edit</a> | <a href="delete_task.php? id=<?php echo $row['tid']; ?>">Delete</a></td>
+            <td><a href="edit_task.php? id=<?php echo $row['tid']; ?>">Edit</a> |
+             <a href="delete_task.php? id=<?php echo $row['tid']; ?>">Delete</a></td>
             </tr>
             <?php
             $sno = $sno+1;

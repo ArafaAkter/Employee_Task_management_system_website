@@ -28,21 +28,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard</title>
-    <link rel="stylesheet" href="../css/user_admin_dashboard.css">
+    <link rel="stylesheet" href="../admin_user.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
      <!-- jQuery CDN -->
      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-     
-    <!-- BootStrap CDN CSS-->
-
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-
-
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
       <!-- jquery code -->
      <!-- show data in right sidebar -->
+
      <script type="text/javascript">
         $(document).ready(function(){
            $("#update_task").click(function(){
@@ -68,50 +68,64 @@
 
 </head>
 <body>
-
- <!-- header -->
-<div class="nav">
-   <div class="header">
-            <div>
-            <h1>User Dashboard</h1>
+<!-- header -->
+<div class="container">
+   <div class="row align-items-center">
+            <div class="col">
+            <h2>TskTrack</h2>
             </div>
-            <div>
-                 <b> <?php echo $_SESSION['email']; ?></b>
-                
+            <div class="col text-end">
+                 <b><?php echo $_SESSION['email']; ?></b>  
             </div>
         </div>
 </div>
+    <div class="user_dashboard">
+        <h2>Welcome To User Dashboard......!</h2>
+    </div>
+    <hr>
 
 <!-- content -->
 <!-- <!left sidebar --> 
+
 <div class="row">
-    <div class="col-md-2" id="left-sidebar">
+    <div class="col-md-3" id="left-sidebar">
         <table class="table">
             <tr>
                 <td style="text-align: center;">
-                    <a href="user_dashboard.php" type="button" class="link">Dashboard</a>
-                </td>
-                <hr>
+                <a href="user_dashboard.php" type="button" class="link">
+                    <i class="fas fa-home fa-3x"></i>
+                    <br> Dashboard
+                </a>
+                 </td>
+
             </tr>
             <tr>
                 <td style="text-align: center;">
-                    <a href="update_task.php" type="button" class="link" id="update_task">Update Task</a>
+                    <a href="update_task.php" type="button" class="link" id="update_task">
+                    <i <i class="fas fa-tasks fa-3x"></i>
+                    <br>Update Task</a>
                 </td>
             </tr>
            
             <tr>
                 <td style="text-align: center;">
-                    <a type="button" class="link" id="apply_leave">Apply Leave</a>
+                    <a type="button" class="link" id="apply_leave">
+                        <i class="fas fa-calendar-alt fa-3x"></i> 
+                        <br>Apply Leave</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align: center;">
-                    <a type="button" class="link" id="leave_status">Leave Status</a>
+                    <a type="button" class="link" id="leave_status">
+                    <i class="fas fa-clock fa-3x"></i>
+                    <br>Leave Status</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align: center;">
-                    <a href="../logout.php" type="button" class="link">Logout</a>
+                    <a href="../logout.php" type="button" class="link">
+                    <i class="fas fa-sign-out-alt fa-2x"></i>
+                  <br> Logout</a>
                 </td>
             </tr>
 
@@ -119,7 +133,7 @@
     </div>
 
 <!-- right sidebar -->
-    <div class="col-md-10" id="right_sidebar">
+    <div class="col-md-8" id="right_sidebar" style="color: white;"> 
         <h4>Instruction for Employees</h4>
         <ul>
             <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, magni omnis. Dicta, earum iure consequuntur nam harum commodi ipsum dolorem eveniet iste sint repellat voluptate laborum nulla pariatur ea natus?</li>
@@ -128,8 +142,6 @@
         </ul>
     </div>
 </div>
- 
-
 
 <!-- Bootstrap CDN JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

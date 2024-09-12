@@ -27,15 +27,18 @@ if(isset($_POST['create_task'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <!-- <link rel="stylesheet" href="user_admin_dashboard.css"> -->
+
+    <link rel="stylesheet" href="../admin_user.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
      <!-- jQuery CDN -->
      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-     
     <!-- BootStrap CDN CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="../css/user_admin_dashboard.css">
 
     <!-- jquery code -->
      <!-- show data in right sidebar -->
@@ -66,48 +69,63 @@ if(isset($_POST['create_task'])){
 <body>
 
  <!-- header -->
-<div class="nav">
-   <div class="header">
-            <div>
-            <h1>Admin Dashboard</h1>
+<!-- header -->
+<div class="container">
+   <div class="row align-items-center">
+            <div class="col">
+            <h2>TskTrack</h2>
             </div>
-            <div>
-                <b><?php echo $_SESSION['email'];?></b>
+            <div class="col text-end">
+                 <b><?php echo $_SESSION['email']; ?></b>  
             </div>
         </div>
 </div>
+    <div class="user_dashboard">
+        <h2>Welcome To Admin Dashboard......!</h2>
+    </div>
+    <hr>
 
 <!-- content -->
 <!-- <!left sidebar --> 
 <div class="row">
-    <div class="col-md-2" id="left_sidebar">
+    <div class="col-md-3" id="left_sidebar">
         <table class="table">
             <tr>
                 <td style="text-align: center;">
-                    <a href="admin_dashboard.php" type="button" class="link">Dashboard</a>
+                    <a href="admin_dashboard.php" type="button" class="link">
+                    <i class="fas fa-home fa-3x"></i>
+                    <br>Dashboard</a>
                 </td>
                 <hr>
             </tr>
 
             <tr>
                 <td style="text-align: center;">
-                    <a href="create_task.php" type="button" class="link" id="create_task">Create Task</a>
+                    <a href="create_task.php" type="button" class="link" id="create_task">
+                    <i class="fas fa-plus-circle fa-3x"></i>
+                    <br>Create Task</a>
                 </td>
             </tr>
  
             <tr>
                 <td style="text-align: center;">
-                    <a href="manage_task.php" type="button" class="link" id="manage_task">Manage Task</a>
+                    <a href="manage_task.php" type="button" class="link" id="manage_task">
+                    <i class="fas fa-tasks fa-3x"></i>
+                    <br>Manage Task</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align: center;">
-                    <a href="" type="button" class="link" id="view_leave_applications">Leave Application</a>
+                    <a href="" type="button" class="link" id="view_leave_applications">
+                    <i class="fas fa-file-alt fa-3x"></i>
+                    <br>Leave Application</a>
                 </td>
             </tr>
             <tr>
                 <td style="text-align: center;">
-                    <a href="../logout.php" type="button" class="link">Logout</a>
+                    <a href="../logout.php" type="button" class="link">
+                    <i class="fas fa-sign-out-alt fa-3x"></i>
+                    <br>Logout</a>
                 </td>
             </tr>
 
@@ -115,7 +133,7 @@ if(isset($_POST['create_task'])){
     </div>
 
 <!-- right sidebar -->
-    <div class="col-md-10" id="right_sidebar">
+    <div class="col-md-8" id="right_sidebar"style="color: white;">
         <h4>Instruction for Admin</h4>
         <ul>
             <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, magni omnis. Dicta, earum iure consequuntur nam harum commodi ipsum dolorem eveniet iste sint repellat voluptate laborum nulla pariatur ea natus?</li>

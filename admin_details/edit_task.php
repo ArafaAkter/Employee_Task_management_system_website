@@ -1,13 +1,12 @@
 <?php
       include('../includes/connection_db.php');
       if(isset($_POST['edit_task'])){
-        $query = "UPDATE tasks SET uid = $_POST[id],description = '$_POST[description]',start_date = '$_POST[start_date]',end_date = '$_POST[end_date]'WHERE tid = $_GET[id]";
-        
+        $query = "UPDATE tasks SET uid = $_POST[id],description = '$_POST[description]',start_date = '$_POST[start_date]',end_date = '$_POST[end_date]'WHERE tid = $_GET[id]";   
         $query_run = mysqli_query($connection,$query);
         if($query_run){
             echo "<script type='text/javascript'>
             alert('Task Updated');
-            window.location.href = 'admin_dashboard.php';
+            window.location.href = './admin_dashboard.php';
             </script>";
         }
         else{
@@ -25,21 +24,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Edit Task</title>
+
+<link rel="stylesheet" href="../admin_user.css">
 <!-- jQuery CDN -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 <!-- BootStrap CDN CSS-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link rel="stylesheet" href="../css/user_admin_dashboard.css">
-   
+  
 </head>
 <body>
-    <div class="row" id="header">
-        <div class="col-md-12">
-            <h3>ETMS</h3>
-        </div>
-    </div>
-    <div class="row">
+    <div class="row" style="margin-top: 50px; color: white;">
         <div class="col-md-4 m-auto">
             <h3>Edit Task</h3>
             <?php 
@@ -83,7 +78,8 @@
                     <level>End Date:<level>
                     <input type="date" class="form-control" name="end_date" value="<?php echo $row['end_date'];?>"required>
                    </div>
-                   <input type="submit" class="btn-btn-warning" name="edit_task" value="Update">
+                   <input type="submit" class="btn btn-primary" name="edit_task" value="Update"style="margin-top:5px;">
+                   <a href="admin_dashboard.php" style="color: white;">AdminDashboard</a>
 
             </form>
             <?php

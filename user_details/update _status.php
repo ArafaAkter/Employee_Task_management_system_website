@@ -25,24 +25,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Task</title>
 
-    <link rel="stylesheet" href="../css/user_admin_dashboard.css">
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <!-- BootStrap CDN CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body{
+            background-image: url('https://i.ibb.co.com/7yd8Z0C/pngtree-blue-abstract-background-business-image-564246.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
 
    
 </head>
 <body>
-    <div class="row" id="header">
-        <div class="col-md-12">
-            <h3>ETMS</h3>
-        </div>
-    </div>
-    <div class="row">
+
+    <div class="row" style="margin-top: 30px;">
         <div class="col-md-4 m-auto">
-            <h3>Update Status</h3>
+            <h3 style="color: white;">Update Status</h3>
             <?php 
                 $query = "SELECT *FROM tasks WHERE tid = $_GET[id]";
                 $query_run = mysqli_query($connection,$query);
@@ -60,8 +68,7 @@
                     </select>
 
                    </div>
-                   <input type="submit" class="btn-btn-warning" name="update_status" value="Update">
-
+                   <input type="submit" class="btn btn-primary" name="update_status" value="Update"style="margin-top: 5px;>
             </form>
             <?php
             }

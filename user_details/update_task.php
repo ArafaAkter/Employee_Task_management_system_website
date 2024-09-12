@@ -10,8 +10,7 @@ include('../includes/connection_db.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YourTask</title>
-    
-    <link rel="stylesheet" href="../css/user_admin_dashboard.css">
+    <link rel="stylesheet" href="/styles.css">
      <!-- jQuery CDN -->
      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
@@ -20,7 +19,7 @@ include('../includes/connection_db.php');
 </head>
 <body>
    <center><h3>Your Tasks</h3></center> <br>
-   <table class="table" style="background-color: white;width:75vw;">
+   <table class="table" style="background-color: white;">
     <tr>
         <th>S.No</th>
         <th>Task ID</th>
@@ -43,9 +42,7 @@ include('../includes/connection_db.php');
                 <td><?php echo $row['start_date']; ?></td>
                 <td><?php echo $row['end_date']; ?></td>
                 <td><?php echo $row['status']; ?></td>
-                <!-- <td><a href="update_status.php?id=<?php echo $row['tid']; ?>">Update</a></td> -->
                 <td><a href="./update _status.php?id=<?php echo $row['tid']; ?>">Update</a></td>
-             
             </tr>
             <?php
             $sno++;

@@ -33,10 +33,12 @@ session_start();
     <title>Admin Login</title>
      <!-- jQuery CDN -->
      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/login.css">
+     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="form">
+<img src="https://i.ibb.co.com/7yd8Z0C/pngtree-blue-abstract-background-business-image-564246.jpg">
+
    <form action="" method="POST">
         <h1>Admin Login</h1>
 
@@ -52,7 +54,11 @@ session_start();
         <input type="submit" name ="adminlogin"  value="Login" class="login-btn">
         </div>
 
-        <div>
+        <div class="register">
+        <p>Dont have an account? <a href="admin_register.php">Register</a></p>
+        </div>
+
+        <div class="go_home">
         <a href="index.php">Go Home</a>
         </div>
 

@@ -1,5 +1,5 @@
 <?php
-    include ('includes/connection_db.php');
+    include ('./includes/connection_db.php');
 
     if(isset($_POST['userRegister'])){
         $query = "INSERT INTO users VALUES(null,'$_POST[name]','$_POST[email]','$_POST[password]',$_POST[mobile])";
@@ -7,7 +7,7 @@
         if($query_run){
             echo"<script type = 'text/javascript'>
             alert('User added');
-            window.location.href = 'index.php';
+            window.location.href = './index.php';
             </script>";
         }
         else{
@@ -27,13 +27,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Registration</title>
+    <link rel="stylesheet" href="styles.css">
      <!-- jQuery CDN -->
      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/register.css">
+    
 </head>
-<body>
-<div class="form">
-<form action="" method="POST">
+    <body>
+    <img src="https://i.ibb.co.com/7yd8Z0C/pngtree-blue-abstract-background-business-image-564246.jpg">
+
+    <div class="form">
+    <form action="" method="POST">
         <h1>User Registration</h1>
 
         <div class="input-box">
@@ -52,14 +55,14 @@
         </div>
 
         <div>
-        <input type="submit" name ="adminRegister"  value="Register" class="register-btn"><br>
+        <input type="submit" name ="userRegister"  value="Register" class="register-btn"><br>
         </div>
 
         <div class="login">
         <p>You have an account? <a href="user_login.php">Login</a></p>
         </div>
 
-        <div>
+        <div class="go_home">
         <a href="index.php">Go Home</a>
         </div>
 
