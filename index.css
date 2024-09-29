@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url('https://i.ibb.co/7yd8Z0C/pngtree-blue-abstract-background-business-image-564246.jpg');
+    background-size: cover;
+     background-position: center;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, #2529ff, #411ab8);
+    border-radius: 12px;
+    box-shadow: 0 6px 6px rgba(11, 10, 7, 0.934);
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin:10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; 
+}
+
+nav ul li a:hover {
+    color:  yellow;
+}
+
+/* Banner Section */
+.banner {
+    background-color: ghostwhite;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    text-align: center;
+    
+}
+
+.banner h1 {
+   
+    font-size: 48px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    margin: 10px;
+    
+}
+
+/* Card Section */
+.card-section {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 6px rgba(11, 10, 7, 0.934);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #2529ff, #411ab8);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 0;
+}

@@ -72,13 +72,14 @@
 <div class="container">
    <div class="row align-items-center">
             <div class="col">
-            <h2>TskTrack</h2>
+            <h2>TaskMaster</h2>
             </div>
             <div class="col text-end">
                  <b><?php echo $_SESSION['email']; ?></b>  
             </div>
         </div>
 </div>
+<hr>
     <div class="user_dashboard">
         <h2>Welcome To User Dashboard......!</h2>
     </div>

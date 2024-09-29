@@ -14,7 +14,7 @@ include('../includes/connection_db.php');
 </head>
 <body>
   <center><h3>All assigned tasks</h3></center>
-  <table style="width: 75vw;" class="table">
+  <table style="width: 70vw;" class="table">
     <tr>
         <th>S.No</th>
         <th>Task ID</th>

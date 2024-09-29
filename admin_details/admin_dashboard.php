@@ -27,7 +27,7 @@ if(isset($_POST['create_task'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-
+    <!-- css -->
     <link rel="stylesheet" href="../admin_user.css">
 
     <!-- Font Awesome CDN -->
@@ -73,18 +73,18 @@ if(isset($_POST['create_task'])){
 <div class="container">
    <div class="row align-items-center">
             <div class="col">
-            <h2>TskTrack</h2>
+            <h2>TaskMaster</h2>
             </div>
             <div class="col text-end">
                  <b><?php echo $_SESSION['email']; ?></b>  
             </div>
         </div>
 </div>
+<hr>
     <div class="user_dashboard">
         <h2>Welcome To Admin Dashboard......!</h2>
     </div>
-    <hr>
-
+<hr>
 <!-- content -->
 <!-- <!left sidebar --> 
 <div class="row">
@@ -96,7 +96,6 @@ if(isset($_POST['create_task'])){
                     <i class="fas fa-home fa-3x"></i>
                     <br>Dashboard</a>
                 </td>
-                <hr>
             </tr>
 
             <tr>

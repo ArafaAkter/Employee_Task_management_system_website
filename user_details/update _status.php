@@ -68,7 +68,8 @@
                     </select>
 
                    </div>
-                   <input type="submit" class="btn btn-primary" name="update_status" value="Update"style="margin-top: 5px;>
+                   <input type="submit" class="btn btn-primary" name="update_status" value="Update"style="margin-top: 5px;">
+                    <a href="../user_details/user_dashboard.php" style="color: white;">User Dashboard</a>
             </form>
             <?php
             }

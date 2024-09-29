@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Task</title>
+
      <!-- BootStrap CDN CSS-->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -40,14 +41,14 @@
                     <textarea class="form-control" rows="3" cols="50" name="description" placeholder="Mention the task"></textarea>
                    </div> 
                    <div class="form-group">
-                    <level>Start Date:<level>
+                    <label>Start Date:</label>
                     <input type="date" class="form-control" name="start_date">
                    </div>
                    <div class="form-group">
-                    <level>End Date:<level>
+                    <label>End Date:</label>
                     <input type="date" class="form-control" name="end_date">
                    </div>
-                   <input  type="submit" class="btn btn-primary"name="create_task" value="Create"style="margin-top: 5px;>
+                   <input  type="submit" class="btn btn-primary"name="create_task" value="Create"style="margin-top: 5px;">
             </form>
 
         </div>

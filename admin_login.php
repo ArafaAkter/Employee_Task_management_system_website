@@ -31,13 +31,13 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login</title>
-     <!-- jQuery CDN -->
-     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="styles.css">
+    
+      <!-- External css -->
+      <link rel="stylesheet" href="login_register.css">
+     
 </head>
 <body>
 <div class="form">
-<img src="https://i.ibb.co.com/7yd8Z0C/pngtree-blue-abstract-background-business-image-564246.jpg">
 
    <form action="" method="POST">
         <h1>Admin Login</h1>
@@ -55,7 +55,7 @@ session_start();
         </div>
 
         <div class="register">
-        <p>Dont have an account? <a href="admin_register.php">Register</a></p>
+        <p>Don't have an account? <a href="admin_register.php">Register</a></p>
         </div>
 
         <div class="go_home">

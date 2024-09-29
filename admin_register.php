@@ -27,13 +27,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Admin Registration</title>
-        <link rel="stylesheet" href="styles.css">
-        
-        <!-- jQuery CDN -->
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+         <!-- External css -->
+        <link rel="stylesheet" href="login_register.css">
+    
     </head>
 <body>
-    <img src="https://i.ibb.co.com/7yd8Z0C/pngtree-blue-abstract-background-business-image-564246.jpg">
     <div class="form">
     <form action="" method="POST">
         <h1>Admin Registration</h1>
@@ -60,7 +59,7 @@
         <p>You have an account? <a href="admin_login.php">Login</a></p>
         </div>
         
-        <di class="go_home">
+        <div class="go_home">
         <a href="index.php">Go Home</a>
         </div>
 
